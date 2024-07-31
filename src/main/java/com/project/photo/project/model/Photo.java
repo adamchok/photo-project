@@ -18,7 +18,6 @@ public class Photo {
     private String contentType;
 
     @JsonIgnore
-    @Lob
     private byte[] data;
 
     public Photo(){};

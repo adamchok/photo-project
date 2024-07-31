@@ -12,9 +12,9 @@ import org.springframework.web.server.ResponseStatusException;
 @RestController
 public class DownloadController {
 
-    @Autowired
     private final PhotoService photoService;
 
+    @Autowired
     public DownloadController(PhotoService photoService) {
         this.photoService = photoService;
     }

@@ -2,6 +2,7 @@ package com.project.photo.project.web;
 
 import com.project.photo.project.model.Photo;
 import com.project.photo.project.service.PhotoService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -18,6 +19,7 @@ public class PhotoController {
     private final PhotoService photoService;
 
     // Constructor injection!
+    @Autowired
     public PhotoController(PhotoService photoService) {
         this.photoService = photoService;
     }
